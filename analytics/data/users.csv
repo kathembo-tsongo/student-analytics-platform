@@ -1,0 +1,18 @@
+id,email,name,password,role,status
+1,admin@strathmore.edu,Admin User,password123,admin,active
+2,dean.sces@strathmore.edu,Dean of SCES,password123,school_admin,active
+3,dean.sbs@strathmore.edu,Dean of SBS,password123,school_admin,active
+4,dean.sth@strathmore.edu,Dean of STH,password123,school_admin,active
+5,dean.sls@strathmore.edu,Dean of SLS,password123,school_admin,active
+6,dean.shss@strathmore.edu,Dean of SHSS,password123,school_admin,active
+7,mentor.bbit@strathmore.edu,BBIT Mentor,password123,mentor,active
+8,mentor.ics@strathmore.edu,ICS Mentor,password123,mentor,active
+9,mentor.cns@strathmore.edu,CNS Mentor,password123,mentor,active
+10,mentor.bcom@strathmore.edu,BCOM Mentor,password123,mentor,active
+11,mentor.bfs@strathmore.edu,BFS Mentor,password123,mentor,active
+12,mentor.bscm@strathmore.edu,BSCM Mentor,password123,mentor,active
+13,mentor.btm@strathmore.edu,BTM Mentor,password123,mentor,active
+14,mentor.bhm@strathmore.edu,BHM Mentor,password123,mentor,active
+15,mentor.law@strathmore.edu,Law Mentor,password123,mentor,active
+16,mentor.ba@strathmore.edu,BA Mentor,password123,mentor,active
+17,mentor.common units@strathmore.edu,Common Units Mentor,password123,mentor,active

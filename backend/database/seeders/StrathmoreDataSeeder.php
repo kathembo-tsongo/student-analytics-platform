@@ -317,7 +317,7 @@ class StrathmoreDataSeeder extends Seeder
         foreach ($data as $row) {
             $row = array_combine($headers, $row);
             
-            // Validate foreign keys
+            // Validate foreign keys are verified
             if (!$this->foreignKeyExists('students', $row['student_id'])) {
                 $skipped++;
                 continue;

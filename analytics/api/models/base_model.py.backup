@@ -1,0 +1,133 @@
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.preprocessing import StandardScaler
+import pandas as pd
+import numpy as np
+import joblib
+import os
+
+class BaseRiskModel:
+    def __init__(self, model_name):
+        self.model_name = model_name
+        self.model = None
+        self.scaler = None
+        self.feature_columns = None
+        
+        # UPDATE: Use V2 models (trained on historical data)
+	self.model_path = f'models/{model_name}_v2.pkl'
+	self.scaler_path = f'models/{model_name}_scaler_v2.pkl'
+	self.features_path = f'models/{model_name}_features_v2.pkl'
+        
+    def load(self):
+        """Load trained model, scaler, and features from disk"""
+        try:
+            if os.path.exists(self.model_path):
+                self.model = joblib.load(self.model_path)
+                self.scaler = joblib.load(self.scaler_path)
+                self.feature_columns = joblib.load(self.features_path)
+                print(f"✅ Loaded {self.model_name} (V2 - Enhanced)")
+                return True
+            else:
+                print(f"⚠️  Model not found: {self.model_path}")
+                return False
+        except Exception as e:
+            print(f"❌ Error loading {self.model_name}: {str(e)}")
+            return False
+    
+    def save(self):
+        """Save trained model, scaler, and features to disk"""
+        try:
+            os.makedirs('models', exist_ok=True)
+            joblib.dump(self.model, self.model_path)
+            joblib.dump(self.scaler, self.scaler_path)
+            joblib.dump(self.feature_columns, self.features_path)
+            print(f"✅ Saved {self.model_name} (V2)")
+            return True
+        except Exception as e:
+            print(f"❌ Error saving {self.model_name}: {str(e)}")
+            return False
+    
+    def train(self, df):
+        """Train the model on provided data"""
+        # Prepare features
+        X = self.prepare_features(df)
+        y = self.create_target(df)
+        
+        # Handle NaN and inf values
+        X = X.fillna(0)
+        X = X.replace([np.inf, -np.inf], 0)
+        
+        # Initialize and fit scaler
+        self.scaler = StandardScaler()
+        X_scaled = self.scaler.fit_transform(X)
+        
+        # Train model
+        self.model = RandomForestClassifier(
+            n_estimators=100,
+            max_depth=10,
+            min_samples_split=5,
+            min_samples_leaf=2,
+            class_weight='balanced',
+            random_state=42
+        )
+        self.model.fit(X_scaled, y)
+        
+        # Save feature columns
+        self.feature_columns = X.columns.tolist()
+        
+        print(f"✅ Trained {self.model_name}")
+        return self.model
+    
+    def prepare_features(self, df):
+        """Prepare features for prediction"""
+        # Define feature columns (excluding IDs and target)
+        feature_cols = [col for col in df.columns if col not in [
+            'id', 'student_id', 'student_code', 'program_id', 'school_id', 'status'
+        ]]
+        
+        X = df[feature_cols].copy()
+        
+        # Handle NaN and inf
+        X = X.fillna(0)
+        X = X.replace([np.inf, -np.inf], 0)
+        
+        return X
+    
+    def predict(self, student_data):
+        """Make prediction for a single student"""
+        if self.model is None or self.scaler is None:
+            raise Exception(f"{self.model_name} not loaded. Call load() first.")
+        
+        # Convert to DataFrame if needed
+        if isinstance(student_data, dict):
+            student_data = pd.DataFrame([student_data])
+        
+        # Ensure we have the right features
+        if self.feature_columns:
+            # Reorder columns to match training
+            student_data = student_data[self.feature_columns]
+        
+        # Handle NaN and inf
+        student_data = student_data.fillna(0)
+        student_data = student_data.replace([np.inf, -np.inf], 0)
+        
+        # Scale features
+        X_scaled = self.scaler.transform(student_data)
+        
+        # Predict
+        prediction = self.model.predict(X_scaled)[0]
+        probability = self.model.predict_proba(X_scaled)[0][1]
+        
+        return prediction, probability
+    
+    def create_target(self, df):
+        """Override in subclasses to define target variable"""
+        raise NotImplementedError("Subclasses must implement create_target()")
+    
+    def get_risk_level(self, probability):
+        """Convert probability to risk level"""
+        if probability >= 0.7:
+            return 'HIGH'
+        elif probability >= 0.4:
+            return 'MEDIUM'
+        else:
+            return 'LOW'

@@ -1,3 +1,11 @@
-analytics/venv/
-venv/
-*.so
+# Data and DBs
+*.db
+*.sqlite3
+*.csv
+data/raw/
+
+# Images
+*.png
+*.jpg
+*.jpeg
+*.gif

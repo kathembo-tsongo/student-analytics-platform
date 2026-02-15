@@ -1,0 +1,263 @@
+2026-02-14 22:58:31,112 - INFO - ======================================================================
+2026-02-14 22:58:31,112 - INFO - 🤖 ML MODEL TRAINING & EVALUATION
+2026-02-14 22:58:31,112 - INFO - ======================================================================
+2026-02-14 22:58:31,112 - INFO - 
+📂 Loading feature-engineered data...
+2026-02-14 22:58:31,146 - INFO -    ✅ Loaded 5000 students with 45 features
+2026-02-14 22:58:31,146 - INFO - 
+======================================================================
+2026-02-14 22:58:31,146 - INFO - 🎯 TRAINING MODELS FOR: Dropout Risk
+2026-02-14 22:58:31,146 - INFO - ======================================================================
+2026-02-14 22:58:31,146 - INFO - 
+🔧 Preparing features for dropout_risk...
+2026-02-14 22:58:31,154 - INFO -    ✅ Features: 23
+2026-02-14 22:58:31,155 - INFO -    ✅ Target distribution: {0: 4722, 1: 278}
+2026-02-14 22:58:31,155 - INFO - 
+✂️  Splitting and balancing data...
+2026-02-14 22:58:31,160 - INFO -    Train set: 4000 samples
+2026-02-14 22:58:31,161 - INFO -    Test set: 1000 samples
+2026-02-14 22:58:31,216 - INFO -    ✅ After SMOTE: 5667 samples
+2026-02-14 22:58:31,216 - INFO -       Class distribution: {0: 3778, 1: 1889}
+2026-02-14 22:58:31,224 - INFO - 
+📊 Training Logistic Regression (Baseline)...
+2026-02-14 22:58:31,255 - INFO - 
+   📊 Logistic Regression Results:
+2026-02-14 22:58:31,256 - INFO -       Accuracy:  1.000
+2026-02-14 22:58:31,256 - INFO -       Precision: 1.000
+2026-02-14 22:58:31,256 - INFO -       Recall:    1.000
+2026-02-14 22:58:31,256 - INFO -       F1-Score:  1.000
+2026-02-14 22:58:31,256 - INFO -       ROC-AUC:   1.000
+2026-02-14 22:58:31,256 - INFO - 
+🌲 Training Random Forest...
+2026-02-14 22:58:31,494 - INFO - 
+   📊 Random Forest Results:
+2026-02-14 22:58:31,494 - INFO -       Accuracy:  1.000
+2026-02-14 22:58:31,494 - INFO -       Precision: 1.000
+2026-02-14 22:58:31,494 - INFO -       Recall:    1.000
+2026-02-14 22:58:31,494 - INFO -       F1-Score:  1.000
+2026-02-14 22:58:31,494 - INFO -       ROC-AUC:   1.000
+2026-02-14 22:58:32,982 - INFO -    💾 Saved feature importance: importance_Dropout Risk_Random_Forest.png
+2026-02-14 22:58:32,982 - INFO - 
+⚡ Training XGBoost...
+2026-02-14 22:58:33,079 - INFO - 
+   📊 XGBoost Results:
+2026-02-14 22:58:33,079 - INFO -       Accuracy:  1.000
+2026-02-14 22:58:33,079 - INFO -       Precision: 1.000
+2026-02-14 22:58:33,080 - INFO -       Recall:    1.000
+2026-02-14 22:58:33,080 - INFO -       F1-Score:  1.000
+2026-02-14 22:58:33,080 - INFO -       ROC-AUC:   1.000
+2026-02-14 22:58:33,509 - INFO -    💾 Saved feature importance: importance_Dropout Risk_XGBoost.png
+2026-02-14 22:58:33,509 - INFO - 
+🚀 Training Gradient Boosting...
+2026-02-14 22:58:34,596 - INFO - 
+   📊 Gradient Boosting Results:
+2026-02-14 22:58:34,596 - INFO -       Accuracy:  1.000
+2026-02-14 22:58:34,596 - INFO -       Precision: 1.000
+2026-02-14 22:58:34,596 - INFO -       Recall:    1.000
+2026-02-14 22:58:34,596 - INFO -       F1-Score:  1.000
+2026-02-14 22:58:34,596 - INFO -       ROC-AUC:   1.000
+2026-02-14 22:58:35,007 - INFO -    💾 Saved feature importance: importance_Dropout Risk_Gradient_Boosting.png
+2026-02-14 22:58:35,007 - INFO - 
+🏆 Best Model: Logistic Regression
+2026-02-14 22:58:35,007 - INFO -    F1-Score: 1.000
+2026-02-14 22:58:35,008 - INFO -    💾 Saved model: dropout_risk_model.pkl
+2026-02-14 22:58:35,008 - INFO -    💾 Saved scaler: dropout_risk_scaler.pkl
+2026-02-14 22:58:35,363 - INFO -    💾 Saved confusion matrix: cm_Dropout Risk_Logistic_Regression.png
+2026-02-14 22:58:35,363 - INFO - 
+======================================================================
+2026-02-14 22:58:35,363 - INFO - 🎯 TRAINING MODELS FOR: Failure Risk
+2026-02-14 22:58:35,363 - INFO - ======================================================================
+2026-02-14 22:58:35,363 - INFO - 
+🔧 Preparing features for failure_risk...
+2026-02-14 22:58:35,370 - INFO -    ✅ Features: 23
+2026-02-14 22:58:35,370 - INFO -    ✅ Target distribution: {0: 4991, 1: 9}
+2026-02-14 22:58:35,370 - INFO - 
+✂️  Splitting and balancing data...
+2026-02-14 22:58:35,374 - INFO -    Train set: 4000 samples
+2026-02-14 22:58:35,374 - INFO -    Test set: 1000 samples
+2026-02-14 22:58:35,389 - INFO -    ✅ After SMOTE: 5989 samples
+2026-02-14 22:58:35,390 - INFO -       Class distribution: {0: 3993, 1: 1996}
+2026-02-14 22:58:35,397 - INFO - 
+📊 Training Logistic Regression (Baseline)...
+2026-02-14 22:58:35,420 - INFO - 
+   📊 Logistic Regression Results:
+2026-02-14 22:58:35,420 - INFO -       Accuracy:  1.000
+2026-02-14 22:58:35,420 - INFO -       Precision: 1.000
+2026-02-14 22:58:35,420 - INFO -       Recall:    1.000
+2026-02-14 22:58:35,420 - INFO -       F1-Score:  1.000
+2026-02-14 22:58:35,420 - INFO -       ROC-AUC:   1.000
+2026-02-14 22:58:35,420 - INFO - 
+🌲 Training Random Forest...
+2026-02-14 22:58:35,640 - INFO - 
+   📊 Random Forest Results:
+2026-02-14 22:58:35,640 - INFO -       Accuracy:  1.000
+2026-02-14 22:58:35,640 - INFO -       Precision: 1.000
+2026-02-14 22:58:35,640 - INFO -       Recall:    1.000
+2026-02-14 22:58:35,640 - INFO -       F1-Score:  1.000
+2026-02-14 22:58:35,640 - INFO -       ROC-AUC:   1.000
+2026-02-14 22:58:36,098 - INFO -    💾 Saved feature importance: importance_Failure Risk_Random_Forest.png
+2026-02-14 22:58:36,098 - INFO - 
+⚡ Training XGBoost...
+2026-02-14 22:58:36,162 - INFO - 
+   📊 XGBoost Results:
+2026-02-14 22:58:36,162 - INFO -       Accuracy:  1.000
+2026-02-14 22:58:36,162 - INFO -       Precision: 1.000
+2026-02-14 22:58:36,162 - INFO -       Recall:    1.000
+2026-02-14 22:58:36,162 - INFO -       F1-Score:  1.000
+2026-02-14 22:58:36,162 - INFO -       ROC-AUC:   1.000
+2026-02-14 22:58:36,584 - INFO -    💾 Saved feature importance: importance_Failure Risk_XGBoost.png
+2026-02-14 22:58:36,584 - INFO - 
+🚀 Training Gradient Boosting...
+2026-02-14 22:58:37,545 - INFO - 
+   📊 Gradient Boosting Results:
+2026-02-14 22:58:37,545 - INFO -       Accuracy:  1.000
+2026-02-14 22:58:37,545 - INFO -       Precision: 1.000
+2026-02-14 22:58:37,546 - INFO -       Recall:    1.000
+2026-02-14 22:58:37,546 - INFO -       F1-Score:  1.000
+2026-02-14 22:58:37,546 - INFO -       ROC-AUC:   1.000
+2026-02-14 22:58:37,992 - INFO -    💾 Saved feature importance: importance_Failure Risk_Gradient_Boosting.png
+2026-02-14 22:58:37,992 - INFO - 
+🏆 Best Model: Logistic Regression
+2026-02-14 22:58:37,992 - INFO -    F1-Score: 1.000
+2026-02-14 22:58:37,994 - INFO -    💾 Saved model: failure_risk_model.pkl
+2026-02-14 22:58:37,994 - INFO -    💾 Saved scaler: failure_risk_scaler.pkl
+2026-02-14 22:58:38,302 - INFO -    💾 Saved confusion matrix: cm_Failure Risk_Logistic_Regression.png
+2026-02-14 22:58:38,302 - INFO - 
+======================================================================
+2026-02-14 22:58:38,302 - INFO - 🎯 TRAINING MODELS FOR: Delay Risk
+2026-02-14 22:58:38,302 - INFO - ======================================================================
+2026-02-14 22:58:38,302 - INFO - 
+🔧 Preparing features for delay_risk...
+2026-02-14 22:58:38,309 - INFO -    ✅ Features: 23
+2026-02-14 22:58:38,310 - INFO -    ✅ Target distribution: {0: 4990, 1: 10}
+2026-02-14 22:58:38,310 - INFO - 
+✂️  Splitting and balancing data...
+2026-02-14 22:58:38,315 - INFO -    Train set: 4000 samples
+2026-02-14 22:58:38,315 - INFO -    Test set: 1000 samples
+2026-02-14 22:58:38,330 - INFO -    ✅ After SMOTE: 5988 samples
+2026-02-14 22:58:38,330 - INFO -       Class distribution: {0: 3992, 1: 1996}
+2026-02-14 22:58:38,339 - INFO - 
+📊 Training Logistic Regression (Baseline)...
+2026-02-14 22:58:38,361 - INFO - 
+   📊 Logistic Regression Results:
+2026-02-14 22:58:38,361 - INFO -       Accuracy:  1.000
+2026-02-14 22:58:38,361 - INFO -       Precision: 1.000
+2026-02-14 22:58:38,361 - INFO -       Recall:    1.000
+2026-02-14 22:58:38,361 - INFO -       F1-Score:  1.000
+2026-02-14 22:58:38,361 - INFO -       ROC-AUC:   1.000
+2026-02-14 22:58:38,361 - INFO - 
+🌲 Training Random Forest...
+2026-02-14 22:58:38,579 - INFO - 
+   📊 Random Forest Results:
+2026-02-14 22:58:38,579 - INFO -       Accuracy:  1.000
+2026-02-14 22:58:38,579 - INFO -       Precision: 1.000
+2026-02-14 22:58:38,579 - INFO -       Recall:    1.000
+2026-02-14 22:58:38,579 - INFO -       F1-Score:  1.000
+2026-02-14 22:58:38,579 - INFO -       ROC-AUC:   1.000
+2026-02-14 22:58:39,051 - INFO -    💾 Saved feature importance: importance_Delay Risk_Random_Forest.png
+2026-02-14 22:58:39,051 - INFO - 
+⚡ Training XGBoost...
+2026-02-14 22:58:39,120 - INFO - 
+   📊 XGBoost Results:
+2026-02-14 22:58:39,120 - INFO -       Accuracy:  1.000
+2026-02-14 22:58:39,121 - INFO -       Precision: 1.000
+2026-02-14 22:58:39,121 - INFO -       Recall:    1.000
+2026-02-14 22:58:39,121 - INFO -       F1-Score:  1.000
+2026-02-14 22:58:39,121 - INFO -       ROC-AUC:   1.000
+2026-02-14 22:58:39,551 - INFO -    💾 Saved feature importance: importance_Delay Risk_XGBoost.png
+2026-02-14 22:58:39,551 - INFO - 
+🚀 Training Gradient Boosting...
+2026-02-14 22:58:40,832 - INFO - 
+   📊 Gradient Boosting Results:
+2026-02-14 22:58:40,832 - INFO -       Accuracy:  1.000
+2026-02-14 22:58:40,832 - INFO -       Precision: 1.000
+2026-02-14 22:58:40,832 - INFO -       Recall:    1.000
+2026-02-14 22:58:40,832 - INFO -       F1-Score:  1.000
+2026-02-14 22:58:40,832 - INFO -       ROC-AUC:   1.000
+2026-02-14 22:58:41,242 - INFO -    💾 Saved feature importance: importance_Delay Risk_Gradient_Boosting.png
+2026-02-14 22:58:41,242 - INFO - 
+🏆 Best Model: Logistic Regression
+2026-02-14 22:58:41,242 - INFO -    F1-Score: 1.000
+2026-02-14 22:58:41,243 - INFO -    💾 Saved model: delay_risk_model.pkl
+2026-02-14 22:58:41,244 - INFO -    💾 Saved scaler: delay_risk_scaler.pkl
+2026-02-14 22:58:41,547 - INFO -    💾 Saved confusion matrix: cm_Delay Risk_Logistic_Regression.png
+2026-02-14 22:58:41,548 - INFO - 
+======================================================================
+2026-02-14 22:58:41,548 - INFO - 📊 TRAINING SUMMARY REPORT
+2026-02-14 22:58:41,548 - INFO - ======================================================================
+2026-02-14 22:58:41,548 - INFO - 
+🎯 Dropout Risk:
+2026-02-14 22:58:41,548 - INFO -    Best Model: Logistic Regression
+2026-02-14 22:58:41,548 - INFO - 
+   Logistic Regression:
+2026-02-14 22:58:41,548 - INFO -       F1-Score: 1.000
+2026-02-14 22:58:41,548 - INFO -       Accuracy: 1.000
+2026-02-14 22:58:41,548 - INFO -       ROC-AUC:  1.000
+2026-02-14 22:58:41,548 - INFO - 
+   Random Forest:
+2026-02-14 22:58:41,548 - INFO -       F1-Score: 1.000
+2026-02-14 22:58:41,548 - INFO -       Accuracy: 1.000
+2026-02-14 22:58:41,548 - INFO -       ROC-AUC:  1.000
+2026-02-14 22:58:41,549 - INFO - 
+   XGBoost:
+2026-02-14 22:58:41,549 - INFO -       F1-Score: 1.000
+2026-02-14 22:58:41,549 - INFO -       Accuracy: 1.000
+2026-02-14 22:58:41,549 - INFO -       ROC-AUC:  1.000
+2026-02-14 22:58:41,549 - INFO - 
+   Gradient Boosting:
+2026-02-14 22:58:41,549 - INFO -       F1-Score: 1.000
+2026-02-14 22:58:41,549 - INFO -       Accuracy: 1.000
+2026-02-14 22:58:41,549 - INFO -       ROC-AUC:  1.000
+2026-02-14 22:58:41,549 - INFO - 
+🎯 Failure Risk:
+2026-02-14 22:58:41,549 - INFO -    Best Model: Logistic Regression
+2026-02-14 22:58:41,549 - INFO - 
+   Logistic Regression:
+2026-02-14 22:58:41,549 - INFO -       F1-Score: 1.000
+2026-02-14 22:58:41,549 - INFO -       Accuracy: 1.000
+2026-02-14 22:58:41,549 - INFO -       ROC-AUC:  1.000
+2026-02-14 22:58:41,549 - INFO - 
+   Random Forest:
+2026-02-14 22:58:41,549 - INFO -       F1-Score: 1.000
+2026-02-14 22:58:41,550 - INFO -       Accuracy: 1.000
+2026-02-14 22:58:41,550 - INFO -       ROC-AUC:  1.000
+2026-02-14 22:58:41,550 - INFO - 
+   XGBoost:
+2026-02-14 22:58:41,550 - INFO -       F1-Score: 1.000
+2026-02-14 22:58:41,550 - INFO -       Accuracy: 1.000
+2026-02-14 22:58:41,550 - INFO -       ROC-AUC:  1.000
+2026-02-14 22:58:41,550 - INFO - 
+   Gradient Boosting:
+2026-02-14 22:58:41,550 - INFO -       F1-Score: 1.000
+2026-02-14 22:58:41,550 - INFO -       Accuracy: 1.000
+2026-02-14 22:58:41,550 - INFO -       ROC-AUC:  1.000
+2026-02-14 22:58:41,550 - INFO - 
+🎯 Delay Risk:
+2026-02-14 22:58:41,550 - INFO -    Best Model: Logistic Regression
+2026-02-14 22:58:41,550 - INFO - 
+   Logistic Regression:
+2026-02-14 22:58:41,550 - INFO -       F1-Score: 1.000
+2026-02-14 22:58:41,550 - INFO -       Accuracy: 1.000
+2026-02-14 22:58:41,550 - INFO -       ROC-AUC:  1.000
+2026-02-14 22:58:41,551 - INFO - 
+   Random Forest:
+2026-02-14 22:58:41,551 - INFO -       F1-Score: 1.000
+2026-02-14 22:58:41,551 - INFO -       Accuracy: 1.000
+2026-02-14 22:58:41,551 - INFO -       ROC-AUC:  1.000
+2026-02-14 22:58:41,551 - INFO - 
+   XGBoost:
+2026-02-14 22:58:41,551 - INFO -       F1-Score: 1.000
+2026-02-14 22:58:41,551 - INFO -       Accuracy: 1.000
+2026-02-14 22:58:41,551 - INFO -       ROC-AUC:  1.000
+2026-02-14 22:58:41,551 - INFO - 
+   Gradient Boosting:
+2026-02-14 22:58:41,551 - INFO -       F1-Score: 1.000
+2026-02-14 22:58:41,551 - INFO -       Accuracy: 1.000
+2026-02-14 22:58:41,551 - INFO -       ROC-AUC:  1.000
+2026-02-14 22:58:41,551 - INFO - 
+======================================================================
+2026-02-14 22:58:41,551 - INFO - ✅ MODEL TRAINING COMPLETE
+2026-02-14 22:58:41,551 - INFO - ======================================================================
+2026-02-14 22:58:41,551 - INFO - 
+💾 Models saved to: models/saved_models
+2026-02-14 22:58:41,551 - INFO - 📊 Evaluations saved to: models/evaluation

@@ -1,0 +1,17 @@
+program_id,program_code,name,school_id,degree_type,duration_years,credits_required
+SBS_BCOM,BCOM,Bachelor of Commerce,SBS,Undergraduate,4,120
+SBS_BSCM,BSCM,Bachelor of Science in Supply Chain and Operations Management,SBS,Undergraduate,4,120
+SBS_BFS,BFS,Bachelor of Financial Services,SBS,Undergraduate,4,120
+SCES_BBIT,BBIT,Bachelor of Business Information Technology,SCES,Undergraduate,4,120
+SCES_BICS,BICS,Bachelor of Science in Informatics and Computer Science,SCES,Undergraduate,4,120
+SCES_BCNC,BCNC,Bachelor of Science in Computer Networks and Cyber Security,SCES,Undergraduate,4,120
+SCES_BEEE,BEEE,Bachelor of Science in Electrical and Electronics Engineering,SCES,Undergraduate,4,120
+SIMS_BBSA,BBSA,Bachelor of Business Science in Actuarial Science,SIMS,Undergraduate,4,120
+SIMS_BBSE,BBSE,Bachelor of Business Science in Financial Economics,SIMS,Undergraduate,4,120
+SIMS_BBSF,BBSF,Bachelor of Business Science in Financial Engineering,SIMS,Undergraduate,4,120
+SIMS_BSSD,BSSD,Bachelor of Science in Statistics and Data Science,SIMS,Undergraduate,4,120
+SHSS_BACO,BACO,Bachelor of Arts in Communication,SHSS,Undergraduate,4,120
+SHSS_BAIS,BAIS,Bachelor of Arts in International Studies,SHSS,Undergraduate,4,120
+SHSS_BADS,BADS,Bachelor of Arts in Development Studies and Philosophy,SHSS,Undergraduate,4,120
+SHSS_BSCP,BSCP,Bachelor of Science in Psychology,SHSS,Undergraduate,4,120
+SLS_LLB,LLB,Bachelor of Laws,SLS,Undergraduate,4,120

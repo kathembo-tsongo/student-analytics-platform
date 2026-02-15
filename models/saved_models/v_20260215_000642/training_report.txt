@@ -1,0 +1,27 @@
+
+TRAINING REPORT
+===============
+Version: 20260215_000642
+Date: 2026-02-15 00:06:43
+Students: 5,000
+Features: 9
+
+RESULTS:
+--------
+Dropout Risk:
+  Accuracy:  1.000
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+Failure Risk:
+  Accuracy:  1.000
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000
+
+Delay Risk:
+  Accuracy:  1.000
+  Precision: 1.000
+  Recall:    1.000
+  F1-Score:  1.000

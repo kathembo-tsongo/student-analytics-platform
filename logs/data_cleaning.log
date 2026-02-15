@@ -1,0 +1,97 @@
+2026-02-14 21:59:56,368 - INFO - ======================================================================
+2026-02-14 21:59:56,368 - INFO - 🧹 STRATHMORE DATA CLEANING & MERGING
+2026-02-14 21:59:56,368 - INFO - ======================================================================
+2026-02-14 21:59:56,368 - INFO - 
+📂 Loading raw data files...
+2026-02-14 21:59:56,380 - INFO -    ✅ students.csv: 5000 records
+2026-02-14 21:59:56,382 - INFO -    ✅ courses.csv: 84 records
+2026-02-14 21:59:56,414 - INFO -    ✅ sis_enrollments.csv: 25939 records
+2026-02-14 21:59:57,051 - INFO -    ✅ attendance_records.csv: 706244 records
+2026-02-14 21:59:59,195 - INFO -    ✅ lms_activities.csv: 2023301 records
+2026-02-14 21:59:59,196 - INFO -    ✅ schools.csv: 5 records
+2026-02-14 21:59:59,199 - INFO -    ✅ programs.csv: 16 records
+2026-02-14 21:59:59,199 - INFO - 
+======================================================================
+2026-02-14 21:59:59,199 - INFO - 🧹 CLEANING DATASETS
+2026-02-14 21:59:59,199 - INFO - ======================================================================
+2026-02-14 21:59:59,199 - INFO - 
+🧹 Cleaning students data...
+2026-02-14 21:59:59,202 - INFO -    ✅ Clean students: 5000 records
+2026-02-14 21:59:59,202 - INFO - 
+🧹 Cleaning enrollment data...
+2026-02-14 21:59:59,219 - INFO -    ✅ Clean enrollments: 25939 records
+2026-02-14 21:59:59,219 - INFO - 
+🧹 Cleaning attendance data...
+2026-02-14 21:59:59,559 - INFO -    ✅ Clean attendance: 706244 records
+2026-02-14 21:59:59,574 - INFO - 
+🧹 Cleaning LMS data...
+2026-02-14 22:00:00,292 - INFO -    ✅ Clean LMS: 2023301 records
+2026-02-14 22:00:00,332 - INFO - 
+📊 Aggregating attendance by student and course...
+2026-02-14 22:00:00,423 - INFO -    ✅ Aggregated to 25939 student-course combinations
+2026-02-14 22:00:00,423 - INFO - 
+📊 Aggregating LMS activities by student...
+2026-02-14 22:00:00,597 - INFO -    ✅ Aggregated to 4601 students
+2026-02-14 22:00:00,597 - INFO - 
+🔗 Merging all datasets...
+2026-02-14 22:00:00,597 - INFO -    Base: students (5000 records)
+2026-02-14 22:00:00,607 - INFO -    + enrollments: 5000 records
+2026-02-14 22:00:00,620 - INFO -    + attendance: 5000 records
+2026-02-14 22:00:00,626 - INFO -    + lms: 5000 records
+2026-02-14 22:00:00,630 - INFO -    + schools: 5000 records
+2026-02-14 22:00:00,634 - INFO -    + programs: 5000 records
+2026-02-14 22:00:00,634 - INFO -    ✅ Final merged dataset: (5000, 25)
+2026-02-14 22:00:00,635 - INFO - 
+🎯 Final cleaning...
+2026-02-14 22:00:00,640 - INFO -    ⚠️  Filled avg_grade: 0 missing values
+2026-02-14 22:00:00,641 - INFO -    ⚠️  Filled cumulative_gpa: 0 missing values
+2026-02-14 22:00:00,642 - INFO -    ⚠️  Filled courses_enrolled: 0 missing values
+2026-02-14 22:00:00,642 - INFO -    ⚠️  Filled physical_attendance_rate: 0 missing values
+2026-02-14 22:00:00,643 - INFO -    ⚠️  Filled sessions_attended: 0 missing values
+2026-02-14 22:00:00,643 - INFO -    ⚠️  Filled sessions_total: 0 missing values
+2026-02-14 22:00:00,644 - INFO -    ⚠️  Filled lms_activity_count: 0 missing values
+2026-02-14 22:00:00,644 - INFO -    ⚠️  Filled lms_total_minutes: 0 missing values
+2026-02-14 22:00:00,645 - INFO -    ⚠️  Filled lms_avg_session_minutes: 0 missing values
+2026-02-14 22:00:00,646 - INFO -    ⚠️  Filled lms_logins_monthly: 0 missing values
+2026-02-14 22:00:00,646 - INFO -    ✅ Final dataset: (5000, 25)
+2026-02-14 22:00:00,647 - INFO - 
+======================================================================
+2026-02-14 22:00:00,647 - INFO - 📊 DATA SUMMARY REPORT
+2026-02-14 22:00:00,647 - INFO - ======================================================================
+2026-02-14 22:00:00,647 - INFO - 
+📈 Dataset Overview:
+2026-02-14 22:00:00,647 - INFO -    Total Students: 5,000
+2026-02-14 22:00:00,647 - INFO -    Total Features: 25
+2026-02-14 22:00:00,659 - INFO -    Memory Usage: 4.13 MB
+2026-02-14 22:00:00,659 - INFO - 
+👥 Student Status:
+2026-02-14 22:00:00,660 - INFO -    Active: 4,601
+2026-02-14 22:00:00,660 - INFO -    On Leave: 399
+2026-02-14 22:00:00,660 - INFO - 
+🎓 Academic Performance:
+2026-02-14 22:00:00,661 - INFO -    Average GPA: 2.95
+2026-02-14 22:00:00,661 - INFO -    Below 2.0 GPA: 10
+2026-02-14 22:00:00,661 - INFO -    Average Grade: 73.7%
+2026-02-14 22:00:00,661 - INFO -    Below 40%: 0
+2026-02-14 22:00:00,661 - INFO - 
+✋ Attendance:
+2026-02-14 22:00:00,661 - INFO -    Average Attendance: 78.5%
+2026-02-14 22:00:00,662 - INFO -    Below 67%: 457
+2026-02-14 22:00:00,662 - INFO - 
+💻 LMS Engagement:
+2026-02-14 22:00:00,662 - INFO -    Average Activities: 405
+2026-02-14 22:00:00,662 - INFO -    Average Duration: 12323 minutes
+2026-02-14 22:00:00,662 - INFO - 
+📋 Missing Data:
+2026-02-14 22:00:00,665 - INFO -    ✅ No missing values!
+2026-02-14 22:00:00,665 - INFO - 
+======================================================================
+2026-02-14 22:00:00,714 - INFO - 
+======================================================================
+2026-02-14 22:00:00,714 - INFO - ✅ CLEANING & MERGING COMPLETE
+2026-02-14 22:00:00,714 - INFO - ======================================================================
+2026-02-14 22:00:00,715 - INFO - 
+💾 Saved to: data/processed/strathmore_clean_data.csv
+2026-02-14 22:00:00,715 - INFO -    Records: 5,000
+2026-02-14 22:00:00,715 - INFO -    Features: 25
+2026-02-14 22:00:00,715 - INFO -    Size: 1.38 MB

@@ -1,0 +1,85 @@
+course_id,unit_code,course_name,year_level,semester,school_id,credit_hours,physical_hours_per_week,online_hours_per_week,total_weeks,physical_sessions_total,online_sessions_total,physical_percentage,online_percentage
+BIT101,BIT101,Introduction to Programming,1,1,SCES,4,2,2,14,28,28,0.5,0.5
+BIT102,BIT102,Computer Systems Architecture,1,1,SCES,3,2,1,14,28,14,0.67,0.33
+BIT103,BIT103,Mathematics for IT I,1,1,SCES,3,2,1,14,28,14,0.67,0.33
+BIT104,BIT104,Digital Logic Design,1,1,SCES,3,2,1,14,28,14,0.67,0.33
+BIT105,BIT105,Communication Skills I,1,1,SCES,3,2,1,14,28,14,0.67,0.33
+BIT106,BIT106,Introduction to IT,1,1,SCES,3,2,1,14,28,14,0.67,0.33
+BIT111,BIT111,Programming II,1,2,SCES,4,2,2,14,28,28,0.5,0.5
+BIT112,BIT112,Database Fundamentals,1,2,SCES,4,2,2,14,28,28,0.5,0.5
+BIT113,BIT113,Mathematics for IT II,1,2,SCES,3,2,1,14,28,14,0.67,0.33
+BIT114,BIT114,Web Development I,1,2,SCES,3,2,1,14,28,14,0.67,0.33
+BIT115,BIT115,Communication Skills II,1,2,SCES,3,2,1,14,28,14,0.67,0.33
+BIT116,BIT116,Computer Ethics,1,2,SCES,3,2,1,14,28,14,0.67,0.33
+BIT201,BIT201,Data Structures and Algorithms,2,1,SCES,4,2,2,14,28,28,0.5,0.5
+BIT202,BIT202,Object-Oriented Programming,2,1,SCES,4,2,2,14,28,28,0.5,0.5
+BIT203,BIT203,Operating Systems,2,1,SCES,3,2,1,14,28,14,0.67,0.33
+BIT204,BIT204,Discrete Mathematics,2,1,SCES,3,2,1,14,28,14,0.67,0.33
+BIT205,BIT205,Systems Analysis & Design,2,1,SCES,3,2,1,14,28,14,0.67,0.33
+BIT206,BIT206,Human Computer Interaction,2,1,SCES,3,2,1,14,28,14,0.67,0.33
+BIT211,BIT211,Computer Networks,2,2,SCES,4,3,1,14,42,14,0.75,0.25
+BIT212,BIT212,Database Management Systems,2,2,SCES,4,2,2,14,28,28,0.5,0.5
+BIT213,BIT213,Software Engineering I,2,2,SCES,3,2,1,14,28,14,0.67,0.33
+BIT214,BIT214,Internet & Web Technology,2,2,SCES,3,2,1,14,28,14,0.67,0.33
+BIT215,BIT215,Business Information Systems,2,2,SCES,3,2,1,14,28,14,0.67,0.33
+BIT301,BIT301,Software Engineering II,3,1,SCES,3,2,1,14,28,14,0.67,0.33
+BIT302,BIT302,Cybersecurity Fundamentals,3,1,SCES,3,2,1,14,28,14,0.67,0.33
+BIT303,BIT303,Mobile Application Development,3,1,SCES,4,2,2,14,28,28,0.5,0.5
+BIT304,BIT304,Data Mining & Analytics,3,1,SCES,3,2,1,14,28,14,0.67,0.33
+BIT305,BIT305,IT Project Management,3,1,SCES,3,2,1,14,28,14,0.67,0.33
+BIT311,BIT311,Cloud Computing,3,2,SCES,3,2,1,14,28,14,0.67,0.33
+BIT312,BIT312,Artificial Intelligence,3,2,SCES,4,2,2,14,28,28,0.5,0.5
+BIT313,BIT313,Network Security,3,2,SCES,3,2,1,14,28,14,0.67,0.33
+BIT314,BIT314,Enterprise Systems,3,2,SCES,3,2,1,14,28,14,0.67,0.33
+BIT401,BIT401,Machine Learning,4,1,SCES,4,2,2,14,28,28,0.5,0.5
+BIT402,BIT402,Research Methods,4,1,SCES,3,2,1,14,28,14,0.67,0.33
+BIT403,BIT403,Final Year Project I,4,1,SCES,4,1,3,14,14,42,0.25,0.75
+BIT404,BIT404,IT Strategy & Governance,4,1,SCES,3,2,1,14,28,14,0.67,0.33
+BIT411,BIT411,Final Year Project II,4,2,SCES,4,1,3,14,14,42,0.25,0.75
+BIT412,BIT412,Emerging Technologies,4,2,SCES,3,2,1,14,28,14,0.67,0.33
+ACC101,ACC101,Financial Accounting I,1,1,SBS,4,2,2,14,28,28,0.5,0.5
+BUS101,BUS101,Introduction to Business,1,1,SBS,3,2,1,14,28,14,0.67,0.33
+ECO101,ECO101,Microeconomics,1,1,SBS,3,2,1,14,28,14,0.67,0.33
+MAT111,MAT111,Business Mathematics I,1,1,SBS,3,2,1,14,28,14,0.67,0.33
+COM111,COM111,Business Communication I,1,1,SBS,3,2,1,14,28,14,0.67,0.33
+MGT101,MGT101,Introduction to Management,1,1,SBS,3,2,1,14,28,14,0.67,0.33
+ACC102,ACC102,Financial Accounting II,1,2,SBS,4,2,2,14,28,28,0.5,0.5
+ECO102,ECO102,Macroeconomics,1,2,SBS,3,2,1,14,28,14,0.67,0.33
+MAT112,MAT112,Business Mathematics II,1,2,SBS,3,2,1,14,28,14,0.67,0.33
+LAW111,LAW111,Business Law,1,2,SBS,3,2,1,14,28,14,0.67,0.33
+COM112,COM112,Business Communication II,1,2,SBS,3,2,1,14,28,14,0.67,0.33
+BUS102,BUS102,Business Environment,1,2,SBS,3,2,1,14,28,14,0.67,0.33
+ACC201,ACC201,Management Accounting,2,1,SBS,4,2,2,14,28,28,0.5,0.5
+MKT201,MKT201,Marketing Principles,2,1,SBS,3,2,1,14,28,14,0.67,0.33
+FIN201,FIN201,Corporate Finance I,2,1,SBS,4,2,2,14,28,28,0.5,0.5
+HRM201,HRM201,Human Resource Management,2,1,SBS,3,2,1,14,28,14,0.67,0.33
+BUS201,BUS201,Business Analytics,2,1,SBS,3,2,1,14,28,14,0.67,0.33
+OMG201,OMG201,Operations Management,2,1,SBS,3,2,1,14,28,14,0.67,0.33
+ACC202,ACC202,Cost Accounting,2,2,SBS,4,2,2,14,28,28,0.5,0.5
+FIN202,FIN202,Corporate Finance II,2,2,SBS,4,2,2,14,28,28,0.5,0.5
+MKT202,MKT202,Consumer Behavior,2,2,SBS,3,2,1,14,28,14,0.67,0.33
+BUS202,BUS202,Business Statistics,2,2,SBS,3,2,1,14,28,14,0.67,0.33
+ENT201,ENT201,Entrepreneurship,2,2,SBS,3,2,1,14,28,14,0.67,0.33
+ACC301,ACC301,Advanced Accounting,3,1,SBS,4,2,2,14,28,28,0.5,0.5
+SCM301,SCM301,Supply Chain Management,3,1,SBS,3,2,1,14,28,14,0.67,0.33
+MKT301,MKT301,Digital Marketing,3,1,SBS,3,2,1,14,28,14,0.67,0.33
+FIN301,FIN301,Investment Analysis,3,1,SBS,3,2,1,14,28,14,0.67,0.33
+MGT301,MGT301,Organizational Behavior,3,1,SBS,3,2,1,14,28,14,0.67,0.33
+ACC302,ACC302,Auditing,3,2,SBS,4,2,2,14,28,28,0.5,0.5
+MKT302,MKT302,Brand Management,3,2,SBS,3,2,1,14,28,14,0.67,0.33
+FIN302,FIN302,Financial Markets,3,2,SBS,3,2,1,14,28,14,0.67,0.33
+BUS301,BUS301,Business Research Methods,3,2,SBS,3,2,1,14,28,14,0.67,0.33
+STR401,STR401,Strategic Management,4,1,SBS,3,2,1,14,28,14,0.67,0.33
+BUS401,BUS401,Business Ethics,4,1,SBS,3,2,1,14,28,14,0.67,0.33
+MGT401,MGT401,Change Management,4,1,SBS,3,2,1,14,28,14,0.67,0.33
+BUS411,BUS411,Business Project I,4,1,SBS,4,1,3,14,14,42,0.25,0.75
+BUS412,BUS412,Business Project II,4,2,SBS,4,1,3,14,14,42,0.25,0.75
+MKT401,MKT401,Strategic Marketing,4,2,SBS,3,2,1,14,28,14,0.67,0.33
+MAT101,MAT101,Calculus I,1,1,SIMS,4,2,2,14,28,28,0.5,0.5
+STA101,STA101,Probability Theory,1,1,SIMS,4,2,2,14,28,28,0.5,0.5
+MAT102,MAT102,Calculus II,1,2,SIMS,4,2,2,14,28,28,0.5,0.5
+STA102,STA102,Statistics I,1,2,SIMS,4,2,2,14,28,28,0.5,0.5
+COM101,COM101,Introduction to Communication,1,1,SHSS,3,2,1,14,28,14,0.67,0.33
+PSY101,PSY101,Introduction to Psychology,1,1,SHSS,3,2,1,14,28,14,0.67,0.33
+LAW101,LAW101,Legal Methods,1,1,SLS,3,2,1,14,28,14,0.67,0.33
+LAW102,LAW102,Constitutional Law I,1,1,SLS,3,2,1,14,28,14,0.67,0.33
